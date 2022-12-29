@@ -6,7 +6,7 @@ import struct
 vid_capture = cv2.VideoCapture(0)
 while(vid_capture.isOpened()):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  
-    sock.connect(('192.168.1.14', 55000))  
+    sock.connect(('localhost', 55000))  
     ret, frame = vid_capture.read()
     if ret == True:
         cv2.imshow('FaceTime', frame)
