@@ -6,7 +6,7 @@ import struct
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 port = 55000
 sock.bind(('', port))
-sock.listen(10)
+sock.listen(1)
 print('Server is listening on port:', port)
 data = b""
 while True:
